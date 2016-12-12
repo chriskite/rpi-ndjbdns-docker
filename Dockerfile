@@ -4,7 +4,8 @@
 # Installs ndjbdns, but does not run any of
 # its services.
 #
-FROM resin/rpi-raspbian:jessie
+FROM resin/raspberrypi3-debian:latest
+ENV INITSYSTEM on
 
 ADD ndjbdns-1.06.tar.gz /src
 
